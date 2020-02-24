@@ -1,11 +1,10 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans|Playfair+Display&display=swap');
 
+body {
+    font-family: 'Playfair Display', serif;
+}
 .nav-color {
     background-color: #E5E5E5 !important;
-}
-
-.font-1 {
-    font-family: 'Playfair Display', serif;
 }
 
 .logotype {
@@ -21,10 +20,6 @@
 .nav-size {
     font-size: 1.5em;
     margin-left: 5rem;
-}
-
-.temp {
-    height: 30rem;
 }
 
 .font-2 {
@@ -53,4 +48,28 @@ a:hover {
     font-size: 1.5rem;
     margin-top: 0.3rem;
 }
+
+.hem-image {
+    height: 90vh;
+    opacity: 85%;
+}
+
+.import-image {
+    width: 15.5rem;
+    height: 25rem;
+    border-radius: 3px;
+}
+
+.import-div {
+    border: solid 1px #E5E5E5;
+    border-radius: 4px;
+    background-color: #f1eeee;
+    margin: 3rem;
+    padding: 1rem;
+}
+
+.font-italic {
+    font-style: italic;
+}
+
   
