@@ -72,4 +72,31 @@ a:hover {
     font-style: italic;
 }
 
+.nyheter-div {
+    border: solid 1px #a19f9f;
+    border-radius: 4px;
+    background-color: #C6C1C1;
+}
+
+#orangeWine {
+    height: 40rem;
+    width: auto;
+    transform: rotate(deg);
+}
+
+.narrow-text {
+    width: 20rem;
+}
+
+.kontakt-div {
+    background-color: #2A2929;
+    border-radius: 4px;
+    color: white;
+}
+
+.fas {
+    font-size: 2.5rem;
+    padding-right: 2rem;
+    
+}
   

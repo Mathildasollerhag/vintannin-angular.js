@@ -10,6 +10,14 @@ app.config(function($routeProvider) {
         templateUrl: "views/privatimport.html",
         controller: "defaultController" 
     })
+    .when("/nyheter", { 
+        templateUrl: "views/nyheter.html",
+        controller: "defaultController" 
+    })
+    .when("/kontakt", { 
+        templateUrl: "views/kontakt.html",
+        controller: "defaultController" 
+    })
 })
 
 app.controller("defaultController", function($scope) {
@@ -27,6 +35,14 @@ app.controller("defaultController", function($scope) {
         { image: "IMG_7554.jpg", firstTitle: "Calcarius Rosa Puglia", secondTitle: "Nr 77367", text: "Spontan jäsning med skalmaceration i små öppna tankar utan temperaturkontroll. Kort lagring i ståltank.", price: "260:-" },
         { image: "IMG_7576.jpg", firstTitle: "Calcarius Orange Puglia", secondTitle: "Nr 77368", text: "Direkt pressning. Spontan jäsning och kort lagring i ståltank.", price: "260:-" },
         { image: "xIMG_7467.jpg", firstTitle: "Vin & Natur Calcarius", secondTitle: "Nr 77369", text: "Vinlåda innehållande Calcarius Rosso, Rosa och Orange (3 x 1 liter). Vinerna från Calcarius är lätta och saftiga.", price: "777:-" }
+    ]
+    $scope.nyheter = [
+        { title: "Rött eller vitt? -Orange, tack!", text: "Beroende på druvsort och hur länge man väljer att jäsa, desto mörkare blir färgen. Ofta väljer man dessutom att lagra vinet en längre tid på amforor eller andra lerkrus som också kan förstärka färgen och ge vinet en karaktäristisk nötighet. Denna metod kan spåras tillbaka till Kaukasus. Den har nyligen fått ett uppsving bland småskaliga vinproducenter, bland annat i Kroatien, Georgien och i den italienska regionen Friuli-Venezia-Giulia men även blivit populär bland vinmakare i andra delar av världen. För att göra orange vin använder man gröna druvsorter som ofta är lokala för regionen. Tack vare lång kontakt med druvskalen blir vinet mörkare än ”vanliga” vitviner och beroende på mognad och utveckling varierar färgen från mörkt gul till orange.", image: "22795699.png" },
+        { title: "Vintipset", text: "Varje vecka tipsar vi om ett gott vin, och vilken mat som passar till. Oavsett om du föredrar rött, vitt eller rosé så finns det något för varje smaklök! Fruktig, mycket frisk smak med liten sötma, inslag av päron, honung, ananas och lime. Serveras vid 8-10°C till rätter av fisk och skaldjur. Säljstart 2012-02-06. Alkoholhalt 12 %. Färg: Ljusgul färg med grön nyans. Doft: Fruktig doft med inslag av päron, lime, ananas, liljekonvalj och mineral. Råvaror: Riesling. Sockerhalt 13 g/l Övrigt: Riesling kommer i många skepnader. Från knastertorra viner från exempelvis Alsace och Australien till honungssöta trockenbeerenauslese från Tyskland och Österrike.", image: "635382.png" },
+        { title: "Nytt på hyllorna", text: "Våren bjuder på vinnyheter som både valts och kvalat in i Systembolagets fasta sortiment. Vi har plockat ut elva goda uppstickare. Belleruche Côtes-du-Rhône Chapoutier 2018 Frankrike 119 kr. Nr 75764. Ny årgång med toppbetyg! Dehesa La Granja 2012 Spanien 129 kr. Nr 4505.Masi Campofiorin 2016 Italien 129 kr. Nr 5123.Finca Negra Reserva Especial 2018 Chile 119 kr. Nr 2704.Lat 42 Rioja Gran Reserva 2011 Spanien 129 kr. Nr 12679. Stellenbosch Reserve Vanderstel 2018 Sydafrika 139 kr. Nr 4638. Ny topp-årgång! Pure Nr 92668. Komplex, kryddig smak med fatkaraktär, inslag av mogna jordgubbar, sandelträ, granatäpplen, muskot, choklad, färska örter och vanilj. Pris: 395:-", image: "24395187.png" },
+    ]
+    $scope.kontakt = [
+        { title: "Kontakta oss", email: "hej@vintannin.se", phone: "+46736490884", name: "Vintannin Västerås AB", address:"Stora gatan 2 B", postal: "721 20 Västerås" }
     ]
 })
 

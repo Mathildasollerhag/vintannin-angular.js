@@ -1,5 +1,11 @@
 <div class="container">
-    <div>
-
+    <div ng-repeat="item in nyheter" class="nyheter-div text-center d-flex justify-content-around m-4">
+        <div class="narrow-text m-5">
+            <h2 class="mb-4">{{item.title}}</h2>
+            <span>{{item.text}}</span>
+        </div>
+        <div><img id="orangeWine" ng-src="images/{{item.image}}"></div>
     </div>
+    
 </div>
+
